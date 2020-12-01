@@ -63,6 +63,9 @@ void List::delete_item()
     {
         cout << "No items to delete" << endl;
     }
+    int choice;
+    cin >> choice;
+    list.erase(list.begin()+choice);
     print_menu();
     
 }
