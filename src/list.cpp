@@ -14,8 +14,8 @@ void List::print_menu()
     cin >> choice;
     if(choice == 4)
     {
-        cout << "FIM" << endl;
-        exit(0);
+        //cout << "FIM" << endl;
+        return;
     } else if(choice == 1)
     {
         print_list();

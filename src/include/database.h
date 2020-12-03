@@ -15,7 +15,8 @@ public:
         
     }
     
-    void write();
+    
+    void write(vector<string> list);
     void read();
     
 };

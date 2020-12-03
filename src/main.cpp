@@ -4,19 +4,24 @@
 
 int main(int argc, char *argv[])
 {
+    List simpleList;
+    Database data;
+
     if(argc>1)
     {
-        List simpleList;
+        
         simpleList.name = string(argv[1]);
         cout << "Nome: " << simpleList.name << endl;
         simpleList.print_menu();
+        data.write(simpleList.list);
+        data.read();
     } else
     {
         cout << "Nao introduziu o nome" << endl;
     }
     
-    Database data;
-    data.write();
+   
+    
 
     cout << "FIM" << endl;
     return 0;
