@@ -1,4 +1,5 @@
 #include "include/list.h"
+#include "include/database.h"
 
 
 int main(int argc, char *argv[])
@@ -14,6 +15,8 @@ int main(int argc, char *argv[])
         cout << "Nao introduziu o nome" << endl;
     }
     
+    Database data;
+    data.write();
 
     cout << "FIM" << endl;
     return 0;
